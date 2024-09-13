@@ -163,3 +163,10 @@ header .LeftImportantContainer{
    justify-content: center;
    align-items: center;text-align: center;
 }
+
+@media only screen and (max-width: 426px) {
+   .ContentImg img{
+      width: 50%;
+      height: 70%;
+   }
+}
