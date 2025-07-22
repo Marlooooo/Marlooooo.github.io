@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+VN:wght@100..400&display=swap');
+body {
+   background-color: rgb(2, 35, 63);
+}
+
+.pagination a{
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 120px 0px 120px;
+}
+
+.nHeaderText {
+   color:rgb(5, 189, 173);
+   font-size: 65px;
+   font-family: "Dancing Script", serif;
+   display: flex;
+   align-items: center;
+   margin: 0;
+}
+.avarriHeaderText{
+   color: white;
+   font-size: 40px; 
+}
+
+.menuContainer{
+   width: fit-content;
+   justify-content: center;
+   align-content: center;
+
+}
+
+.menuContainer ul{
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+}
+
+.menuContainer a{
+   font-family: monospace;
+   font-size: 17px;
+   text-decoration: none;
+   color: white;
+}
+
+.bodyContent{
+   margin: 70px 120px 0px 120px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.introduction{
+   width: fit-content;
+}
+
+.hello h1{
+   font-size: 50px;
+   color:rgb(5, 189, 173);
+   font-family: 'Courier New', Courier, monospace;
+   display: inline;
+}
+.hello .llo{
+   color: white;
+}
+
+.imNameContainer{
+   display: flex;
+   flex-direction: column;
+}
+
+.im h2{
+   font-size: 40px;
+   color:rgb(5, 189, 173);
+   font-family: 'Courier New', Courier, monospace;
+   margin: 0px;
+   width: fit-content;
+}
+.name h1{
+   width: fit-content;
+   font-size: 55px;
+   color: white;
+   font-family:'Courier New', Courier, monospace ;
+   font-weight: 300;
+   margin: 0px;
+}
+
+.course{
+   height: fit-content;
+   width: fit-content;
+   display: flex;
+   gap: 15px;
+}
+
+.span{
+   font-family: "PT Sans Narrow", serif;
+   font-size: 20px;
+   color:rgb(5, 189, 173);
+   width: fit-content;
+   height: fit-content;
+   margin: 0%;
+}
+
+.information{
+   font-family: "PT Sans Narrow", serif;
+   font-size: 20px;
+   color: white;
+   width: fit-content;
+   height: fit-content;
+   margin: 0%;
+}
+.technology{
+   font-family: "PT Sans Narrow", serif;
+   font-size: 20px;
+   color: white;
+   width: fit-content;
+   height: fit-content;
+   margin: 0%;
+}
+.student{
+   font-family: "PT Sans Narrow", serif;
+   font-size: 20px;
+   color: white;
+   width: fit-content;
+   height: fit-content;
+   margin: 0%;
+}
+.role{
+   width: fit-content;
+   margin-top: 20px;
+
+}
+.role .frontDev{
+   font-family: "PT Sans Narrow", serif;
+   font-size: 40px;
+   color: white;
+   width: fit-content;
+   height: fit-content;
+   margin: 0%;
+}
+
+.rightBodyContent{
+   
+}
+
+.projOverviewTitle{     
+   display: flex;
+   flex-wrap: wrap;
+}
+.projOverviewTitle h3{
+   font-family: "PT Sans Narrow", serif;
+   font-size: 25px;
+   color: white;
+   padding: 0px 0px 20px 0px;
+   margin: 0;
+   height: fit-content;
+   width: fit-content;
+   opacity: 50%;
+}
+
+.projectOverview{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.firstProjTitle{
+   padding-left: 6px;
+   margin: 0px 0px 0px 0px;
+   font-family: monospace;
+   font-size: 15px;
+   color: white;
+}
+
+.firstProj img{
+   width: 400px;
+   height: 200px;
+   border-radius: 10px;
+}
+.secondProjTitle{
+   margin: 0px 0px 0px 0px;
+   padding-left: 6px;
+   font-family: monospace;
+   font-size: 15px;
+   color: white;
+}
+
+.secondProj img{
+   width: 400px;
+   height: 200px;
+   border-radius: 10px;
+}
+
+.thirdProj img{
+   width: 400px;
+   height: 200px;
+   border-radius: 10px;
+}
+
+
+@media (max-width: 769px){
+
+   .bodyContent{
+      padding: 20px 0px 0px 0px;
+      margin: 70px 50px 0px 50px;
+      display: flex;
+      justify-content: space-between;
+   }
+   .firstProj img{
+      width: 250px;
+      height: 120px;
+   }
+  .secondProj img{
+      width: 250px;
+      height: 120px;
+   }
+   .projOverviewTitle h3{
+      font-size: 20px;
+      margin: 0px;
+      padding: 0px 0px 10px 0px;
+   }
+   header{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 40px 0px 40px;
+   }
+   .avarriHeaderText{
+      font-size: 20px;
+   }
+   .nHeaderText{
+      font-size: 20px;
+   }
+   .menuContainer a{
+     font-size: 8px; 
+   }
+
+
+   .hello h1{
+      font-size: 30px;
+   }
+   .imNameContainer h2{
+      font-size: 30px;
+   }
+   .name h1{
+      font-size: 30px;
+   }
+ 
+   .course h1{
+      font-size: 20px;
+   }
+   .course span{
+      font-size: 20px;
+   }
+   .role{
+      margin: 10px 0px 0px 0px;
+   }
+   .role .frontDev{
+      font-size: 30px;
+   }
+}
+
+
+@media (max-width: 426px){
+
+   header{
+      padding: 10px 5px 0px 5px;
+      margin: 0px;
+   }
+   .nHeaderText,
+   .avarriHeaderText{
+      font-size: 30px;
+   }
+
+   .menuContainer a{
+      font-size: 9px;
+      padding: 6px 10px 6px 10px;
+      margin: 0px 2px 0px 2px;
+   }
+   .menuContainer ul{
+    padding: 0px;
+    margin: 0px;
+   }
+
+  .bodyContent{
+      padding: 20px 10px 0px 10px;
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+   }
+   .leftBodyContent{
+      display: flex;
+      justify-content: center;
+   }
+   .introduction{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .introduction h1, 
+   .introduction h2,
+   .introduction .frontDev{
+      font-size: 25px;
+   }
+   .course h1,
+   .course .span{
+      font-size: 17px;
+   }
+   .role{
+      margin: 0px 0px 0px 0px;
+   }
+   .imNameContainer{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+   }
+   .course{
+      gap: 8px;
+   }
+
+   .rightBodyContent{
+   display: flex;
+   justify-content: center;
+   }
+
+}
+
+@media (max-width: 376px){
+   .nHeaderText,
+   .avarriHeaderText{
+      font-size: 20px;
+   }
+
+   .menuContainer a{
+      font-size: 6.5px;
+      padding: 6px 10px 6px 10px;
+      margin: 0px 2px 0px 2px;
+   }
+   .introduction h1, 
+   .introduction h2,
+   .introduction .frontDev{
+      font-size: 22px;
+   }
+   .course h1,
+   .course .span{
+      font-size: 13px;
+   }
+}
