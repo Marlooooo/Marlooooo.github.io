@@ -67,6 +67,12 @@ header{
    justify-content: space-between;
 }
 
+.leftBodyContent{
+   display: flex;
+   flex-direction: column;
+   gap: 80px;
+}
+
 .introduction{
    width: fit-content;
 }
@@ -156,6 +162,26 @@ header{
    margin: 0%;
 }
 
+.socialMedia{
+   display: flex;
+   gap: 10px;
+}
+.fb, .ig, .github, .linkedin{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: white;
+   width: 60px;
+   height: 60px;
+}
+.socialMedia a{
+   all: unset;
+   cursor: pointer;
+}
+
+
+
 .rightBodyContent{
    
 }
@@ -222,6 +248,9 @@ header{
       display: flex;
       justify-content: space-between;
    }
+   .leftBodyContent{
+      gap: 30px;
+   }
    .firstProj img{
       width: 250px;
       height: 120px;
@@ -273,6 +302,12 @@ header{
    .role .frontDev{
       font-size: 30px;
    }
+
+   .fb, .ig, .github, .linkedin{
+      width: 40px;
+      height: 40px;
+   }
+
 }
 
 
@@ -307,6 +342,11 @@ header{
    .leftBodyContent{
       display: flex;
       justify-content: center;
+      align-items: center;
+   }
+   .fb, .ig, .github, .linkedin{
+      width: 30px;
+      height: 30px;
    }
    .introduction{
       display: flex;
@@ -345,6 +385,13 @@ header{
    .nHeaderText,
    .avarriHeaderText{
       font-size: 20px;
+   }
+   .leftBodyContent{
+      gap: 20px;
+   }
+   .fb, .ig, .github, .linkedin{
+      width: 25px;
+      height: 25px;
    }
 
    .menuContainer a{
