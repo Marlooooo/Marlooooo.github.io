@@ -28,6 +28,12 @@ header{
    margin: 0px 120px 0px 120px;
 }
 
+.navarroHeader{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .nHeaderText {
    color:rgb(5, 189, 173);
    font-size: 65px;
@@ -62,7 +68,7 @@ header{
 }
 
 .bodyContent{
-   margin: 70px 120px 0px 120px;
+   margin: 70px 100px 0px 100px;
    display: flex;
    justify-content: space-between;
 }
@@ -79,32 +85,36 @@ header{
 
 .hello h1{
    font-size: 50px;
-   color:rgb(5, 189, 173);
+   color: white;
    font-family: 'Courier New', Courier, monospace;
    display: inline;
+   font-weight: 300;
 }
-.hello .llo{
-   color: white;
-}
+
 
 .imNameContainer{
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   gap: 30px;
 }
-
-.im h2{
-   font-size: 40px;
-   color:rgb(5, 189, 173);
+.im{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.im h1{
+   font-size: 45px;
+   color: white;
    font-family: 'Courier New', Courier, monospace;
    margin: 0px;
    width: fit-content;
+   font-weight: 300;
 }
 .name h1{
    width: fit-content;
    font-size: 55px;
-   color: white;
+   color:rgb(5, 189, 173);
    font-family:'Courier New', Courier, monospace ;
-   font-weight: 300;
    margin: 0px;
 }
 
@@ -112,41 +122,20 @@ header{
    height: fit-content;
    width: fit-content;
    display: flex;
-   gap: 15px;
+   gap: 8px;
 }
 
-.span{
-   font-family: "PT Sans Narrow", serif;
-   font-size: 20px;
-   color:rgb(5, 189, 173);
-   width: fit-content;
-   height: fit-content;
-   margin: 0%;
-}
 
-.information{
-   font-family: "PT Sans Narrow", serif;
-   font-size: 20px;
-   color: white;
-   width: fit-content;
-   height: fit-content;
-   margin: 0%;
-}
-.technology{
-   font-family: "PT Sans Narrow", serif;
-   font-size: 20px;
-   color: white;
-   width: fit-content;
-   height: fit-content;
-   margin: 0%;
-}
+.information,
+.technology,
 .student{
-   font-family: "PT Sans Narrow", serif;
-   font-size: 20px;
+   font-size: 25px;
    color: white;
+   font-family: "PT Sans Narrow", serif;
    width: fit-content;
    height: fit-content;
    margin: 0%;
+   font-weight: 500;
 }
 .role{
    width: fit-content;
@@ -178,12 +167,6 @@ header{
 .socialMedia a{
    all: unset;
    cursor: pointer;
-}
-
-
-
-.rightBodyContent{
-   
 }
 
 .projOverviewTitle{     
@@ -239,65 +222,56 @@ header{
    border-radius: 10px;
 }
 
+@media (max-width: 1025px){
+   .imNameContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: first baseline;
+      gap: 0px;
+   }
+}
 
 @media (max-width: 769px){
 
    .bodyContent{
-      padding: 20px 0px 0px 0px;
       margin: 70px 50px 0px 50px;
       display: flex;
       justify-content: space-between;
-   }
-   .leftBodyContent{
-      gap: 30px;
-   }
-   .firstProj img{
-      width: 250px;
-      height: 120px;
-   }
-  .secondProj img{
-      width: 250px;
-      height: 120px;
-   }
-   .projOverviewTitle h3{
-      font-size: 20px;
-      margin: 0px;
-      padding: 0px 0px 10px 0px;
    }
    header{
       display: flex;
       justify-content: space-between;
       margin: 20px 40px 0px 40px;
    }
-   .avarriHeaderText{
-      font-size: 20px;
-   }
    .nHeaderText{
-      font-size: 20px;
+      font-size: 45px;
+   }
+   .avarriHeaderText{
+      font-size: 30px;
    }
    .menuContainer a{
-     font-size: 8px; 
+     font-size: 11px; 
    }
 
 
+   .leftBodyContent{
+      gap: 30px;
+   }
    .hello h1{
-      font-size: 30px;
+      font-size: 40px;
    }
-   .imNameContainer h2{
-      font-size: 30px;
+   .imNameContainer h1{
+      font-size: 40px;
    }
    .name h1{
-      font-size: 30px;
+      font-size: 45px;
    }
- 
    .course h1{
       font-size: 20px;
    }
-   .course span{
-      font-size: 20px;
-   }
+
    .role{
-      margin: 10px 0px 0px 0px;
+      margin: 15px 0px 0px 0px;
    }
    .role .frontDev{
       font-size: 30px;
@@ -308,6 +282,20 @@ header{
       height: 40px;
    }
 
+   .firstProj img{
+      width: 280px;
+      height: 150px;
+   }
+  .secondProj img{
+     width: 280px;
+      height: 150px;
+   }
+   .projOverviewTitle h3{
+      font-size: 20px;
+      margin: 0px;
+      padding: 0px 0px 10px 0px;
+   }
+  
 }
 
 
@@ -317,9 +305,11 @@ header{
       padding: 10px 5px 0px 5px;
       margin: 0px;
    }
-   .nHeaderText,
+.nHeaderText{
+      font-size: 35px;
+   }
    .avarriHeaderText{
-      font-size: 30px;
+      font-size: 25px;
    }
 
    .menuContainer a{
@@ -358,8 +348,7 @@ header{
    .introduction .frontDev{
       font-size: 25px;
    }
-   .course h1,
-   .course .span{
+   .course h1{
       font-size: 17px;
    }
    .role{
@@ -382,9 +371,11 @@ header{
 }
 
 @media (max-width: 376px){
-   .nHeaderText,
+ .nHeaderText{
+      font-size: 25px;
+   }
    .avarriHeaderText{
-      font-size: 20px;
+      font-size: 15px;
    }
    .leftBodyContent{
       gap: 20px;
@@ -404,8 +395,14 @@ header{
    .introduction .frontDev{
       font-size: 22px;
    }
-   .course h1,
-   .course .span{
+   .course h1{
       font-size: 13px;
+   }
+}
+
+@media (max-width: 321px){
+     .projectOverview img{
+      width: 250px;
+      height: 120px;
    }
 }
